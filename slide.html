@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/slide.css">
+</head>
+
+<body>
+    <section class="gallery-section" id="gallerys">
+        <div class="container">
+
+            <!-- title -->
+            <div class="row">
+                <div class="section-title">
+                    <h1>Hall Of Billie</h1>
+                </div>
+            </div>
+
+            <!-- item -->
+            <div class="row">
+                <div class="gallery-item " onclick="openPhoto();currentSlide(1)">
+                    <div class="gallery-item-photos">
+                        <img src="assets/billie1.jpg" alt="photo">
+                        <div class="overlay">
+                            <h4>Billie</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-item-photos" onclick="openPhoto();currentSlide(2)">
+                        <img src="assets/billie1.jpg" alt="photo">
+                        <div class="overlay">
+                            <h4>Billie</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="gallery-item-photos" onclick="openPhoto();currentSlide(3)">
+                        <img src="assets/billie1.jpg" alt="photo">
+                        <div class="overlay">
+                            <h4>Billie</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="myPhoto" class="photo">
+        <span class="close cursor" onclick="closePhoto()">&times;</span>
+        <div class="photo-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="assets/billie1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="assets/billie1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="assets/billie1.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="allimg">
+                <div class="column">
+                    <img class="demo cursor" src="assets/billie1.jpg" style="width:100%" onclick="currentSlide(1)"
+                        alt="Deskripsi Foto">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="assets/billie1.jpg" style="width:100%" onclick="currentSlide(2)"
+                        alt="Deskripsi Foto">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="assets/billie1.jpg" style="width:100%" onclick="currentSlide(3)"
+                        alt="Deskripsi Foto">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- js -->
+    <script src="js/slide.js"></script>
+</body>
+
+</html>

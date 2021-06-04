@@ -1,0 +1,296 @@
+/* CSS Reset */
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Global Style */
+
+body {
+    font-family: 'KoHo', sans-serif;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: dodgerblue;
+}
+
+main {
+    margin-top: 78px;
+}
+
+section {
+    min-height: 100vh;
+}
+
+.tentang, .portofolio, .nilai, .kontak {
+    padding: 100px;
+}
+
+.section-title {
+    font-size: 28px;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+
+/* Header */
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+    display: inline-block;
+    width: inherit;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+}
+
+header h1 {
+    float: left;
+}
+
+
+/* Navigasi Menu */
+
+nav {
+    float: right;
+}
+
+nav ul {
+    padding-top: 9.5px;
+    padding-bottom: 9.5px;
+}
+
+nav li {
+    display: inline;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+/* Section Main */
+
+
+
+/* Section Banner */
+
+.banner {    
+    background: url("https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvbnRhY3R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60") rgba(0, 0, 0, 0.11);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.banner-content {
+    background: rgba(0, 0, 0, 0.651);
+    padding: 50px;
+    width: 50%;
+    color: white;
+    margin: 0 auto;
+}
+
+.banner-content h2, .banner-content p {
+    margin-bottom: 15px;
+}
+
+.banner-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.github, .instagram, .whatsapp {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    background: #ebebeb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.github img, .instagram img, .whatsapp img {
+    border-radius: 60%;
+}
+
+
+/* Section Tentang Saya */
+
+.tentang .wrapper {
+    align-items: center;
+}
+
+.kanan {
+    width: 50%;
+    padding: 30px 0;
+}
+
+.kiri {
+    width: 50%;
+    padding: 30px 0;
+}
+
+.kanan {
+    padding-left: 15px;
+    text-align: justify;
+}
+
+.kiri {
+    padding-right: 15px;
+}
+
+
+/* Section Portofolio */
+
+.portofolio {
+    background: #525150;
+    color: #fff;
+}
+
+.portofolio .wrapper {
+    align-items: center;
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+
+.porto-card {
+    text-align: center;
+    width: 23%;
+}
+
+.porto-title {
+    font-weight: 3000px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.portofolio a {
+    color: #fff;
+}
+
+.portofolio a:hover {
+    color: yellow;
+}
+
+
+/* Section Nilai & Sertifikasi */
+
+.nilai {
+    background-color: #fff;
+}
+
+.nilai .wrapper {
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.nilai-title, .sertifikasi-title {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.tabel-nilai, .tabel-sertifikasi {
+    border: 1px solid #808080;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabel-nilai td, .tabel-nilai th, .tabel-sertifikasi td, .tabel-sertifikasi th {
+    border: 1px solid #000;
+    padding: 15px 20px;
+}
+
+.tabel-nilai th, .tabel-sertifikasi th {
+    background: #808080;
+    color: #fff;
+}
+
+
+/* Section Kontak */
+
+.kontak {
+    min-height: 80vh;
+    background: url("https://images.unsplash.com/photo-1587560699334-cc4ff634909a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29udGFjdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60") rgba(0, 0, 0, .1);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: top;
+    color: #fff;
+}
+
+.kontak .section-title {
+    margin-bottom: 30px;
+}
+
+.kontak-box {
+    padding: 20px 50px;
+    background: rgba(165, 165, 165, 0.425);
+    width: 350px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.kontak input, .kontak textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    font-family: sans-serif;
+}
+
+.kontak-name, .kontak-email, .kontak-pesan {
+    background: #fff;
+    color: rgb(49, 49, 49);
+    border: 1px solid gray;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-kontak {
+    background: dodgerblue;
+    color: #fff;
+    padding: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #fff;
+    font-size: 12px;
+}
